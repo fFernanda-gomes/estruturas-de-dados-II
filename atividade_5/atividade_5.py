@@ -180,7 +180,7 @@ class ArvoreAVL:
         return -1
 
     # ===============================================================
-    # FUNÇÃO DE VISUALIZAÇÃO (DENTRO DA CLASSE)
+    # FUNÇÃO DE VISUALIZAÇÃO
     # ===============================================================
     def draw_tree(self, filename):
         """
@@ -194,26 +194,20 @@ class ArvoreAVL:
             if no is None:
                 return
 
-            # Cria o nó visual. 
-            # ID = chave convertida para string
-            # Label = chave + altura
+            # Cria o nó visual.
             label_visual = f"{no.chave}\n(h={no.altura})"
             dot.node(str(no.chave), label_visual)
 
-            # Desenha aresta esquerda
             if no.esquerda:
                 dot.edge(str(no.chave), str(no.esquerda.chave))
                 add(no.esquerda)
 
-            # Desenha aresta direita
             if no.direita:
                 dot.edge(str(no.chave), str(no.direita.chave))
                 add(no.direita)
 
-        # Inicia a recursão a partir da raiz da própria classe
         add(self.raiz)
         
-        # Gera o arquivo
         dot.render(filename, format="png", cleanup=True)
         print(f"Árvore salva em: {filename}.png")
 
