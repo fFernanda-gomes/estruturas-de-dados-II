@@ -1,7 +1,7 @@
 # Estruturas de Dados II – Atividades
 
 Repositório dedicado às atividades práticas da disciplina **Estrutura de Dados II**.  
-Aqui estão organizados exercícios envolvendo implementação e visualização de estruturas de dados utilizando **Python**, com foco especial em árvores, filas, pilhas, grafos e algoritmos de manipulação.
+Aqui estão organizados exercícios envolvendo implementação e visualização de estruturas de dados utilizando **Python**, com foco especial em árvores, grafos e algoritmos de manipulação.
 
 ---
 

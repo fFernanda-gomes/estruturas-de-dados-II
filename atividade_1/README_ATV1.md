@@ -97,4 +97,3 @@ Essas imagens representam visualmente as estruturas construídas.
 
 ## 📝 Observações
 - O parser implementado é simples e funciona para expressões binárias totalmente parentesisadas.
-- A atividade segue todos os requisitos solicitados pela disciplina.
